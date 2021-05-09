@@ -5,3 +5,9 @@ services:
     build: Dockerfile.production
     command: npm test
     container_name: app
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres

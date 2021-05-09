@@ -12,6 +12,7 @@ services:
   caddy:
     depends_on:
       - app
+      - db
     image: caddy:2-alpine
     ports:
       - 80:80
