@@ -1,5 +1,12 @@
 name: push
 
+on:
+  push:
+    branches:
+      - "*"
+    tags:
+      - "*"
+
 env:
   APP_IMAGE_NAME: grigorigru/devops-for-programmers-project-lvl1
 
