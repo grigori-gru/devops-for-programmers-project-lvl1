@@ -2,9 +2,7 @@ version: "3.8"
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile.production
+    build: Dockerfile.production
     command: npm test
     container_name: app
     volumes:
