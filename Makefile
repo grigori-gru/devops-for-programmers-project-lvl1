@@ -8,4 +8,4 @@ start:
 	docker-compose up
 
 test-ci:
-	docker-compose run app npm test
+	docker-compose -f docker-compose.yml up
