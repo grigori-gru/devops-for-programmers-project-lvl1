@@ -7,8 +7,6 @@ services:
       dockerfile: Dockerfile.production
     command: npm test
     container_name: app
-    volumes:
-      - "./:/app"
 
   db:
     image: postgres:13
