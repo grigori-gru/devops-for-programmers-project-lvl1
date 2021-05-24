@@ -11,3 +11,5 @@ services:
   db:
     image: postgres:13
     container_name: db
+    # only to pass hexlet ci step
+    env_file: test.env

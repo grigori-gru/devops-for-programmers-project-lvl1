@@ -39,6 +39,3 @@ jobs:
           file: Dockerfile.production
           push: true
           tags: ${{ env.APP_IMAGE_NAME }}:latest
-
-      - name: Integ test
-        run: make test-ci
