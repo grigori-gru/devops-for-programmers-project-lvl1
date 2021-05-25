@@ -10,3 +10,7 @@ start:
 
 unit-test:
 	npm run test
+
+# test-ci:
+# 	docker-compose -f docker-compose.yml build
+# 	docker-compose -f docker-compose.yml --env-file test.env run app
