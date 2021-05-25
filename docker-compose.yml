@@ -12,4 +12,6 @@ services:
     image: postgres:13
     container_name: db
     # only to pass hexlet ci step
-    env_file: test.env
+    environment:
+      - POSTGRES_USER=${NODOS_DB_USERNAME}
+      - POSTGRES_PASSWORD=${NODOS_DB_PASSWORD}
