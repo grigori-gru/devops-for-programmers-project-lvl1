@@ -5,7 +5,7 @@ test:
 	npm -s test
 
 start:
-	cp -n .env.example .env || true
+	cp -n .env.example .env
 	docker-compose up
 
 unit-test:

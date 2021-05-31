@@ -2,9 +2,6 @@ version: "3.8"
 
 services:
   app:
-    container_name: app
-    depends_on:
-      - db
     build:
       context: .
       dockerfile: Dockerfile
@@ -18,7 +15,6 @@ services:
     container_name: caddy
     depends_on:
       - app
-      - db
     image: caddy:2-alpine
     ports:
       - 80:80
